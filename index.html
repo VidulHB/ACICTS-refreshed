@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="Ananda College Information & Communication Technological Society" name="description">
+    <title>ACICTS - Ananda College Information & Communication Technology Society</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+<div class="nav-container">
+    <div class="navbar">
+        <div class="flex-1">
+            <img class="logo" src="img/acicts.png"/>
+        </div>
+        <div id="nav">
+            <div class="flex-none font-semibold nav-link btn active" onclick="bodyScroll('home')">
+                <a>Home</a>
+            </div>
+            <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('about')">
+                <a>About</a>
+            </div>
+            <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('projects')">
+                <a>Projects</a>
+            </div>
+            <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('achievements')">
+                <a>Achievements</a>
+            </div>
+            <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('board')">
+                <a>Board</a>
+            </div>
+            <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('contact')">
+                <a>Contact Us</a>
+            </div>
+        </div>
+        <button class="btn btn-soft" id="reg">Register</button>
+        <div class="btn" id="nav-res">
+            <label class="swap swap-rotate" id="nav-btn">
+                <input type="checkbox" class="nav-swap-box" onchange="nav_res()"/>
+                <i class="fa-solid fa-bars swap-off fa-xl"></i>
+                <i class="fa-solid fa-xmark swap-on fa-xl"></i>
+            </label>
+        </div>
+    </div>
+    <div class="navbar" id="res-nav">
+        <div class="flex-none font-semibold nav-link btn active" onclick="bodyScroll('home')">
+            <a>Home</a>
+        </div>
+        <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('about')">
+            <a>About</a>
+        </div>
+        <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('projects')">
+            <a>Projects</a>
+        </div>
+        <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('achievements')">
+            <a>Achievements</a>
+        </div>
+        <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('board')">
+            <a>Board</a>
+        </div>
+        <div class="flex-none font-semibold nav-link btn" onclick="bodyScroll('contact')">
+            <a>Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<div id="home" class="landing-container">
+    <div class="hero min-h-screen">
+        <div class="hero-content text-center" style="z-index: 1;">
+            <div class="max-w-md">
+                <img class="main-logo" src="img/acicts.png"/>
+                <h2 class="text-3xl font-semibold">Ananda College Information and Communication Technology Society</h2>
+                <p class="py-6">
+                    Empowering Minds and Shaping the Future through Innovation – Join us on our journey as we explore,
+                    create, and connect in the world of technology.
+                </p>
+                <button class="btn btn-soft" id="reg">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="about" class="about">
+    <div class="flex w-full flex-col">
+        <div class="divider" style="margin: 0 25px;"><p class="text-2xl font-bold">About</p></div>
+    </div>
+    <div class="about-text text-lg font-semibold">
+        <p>
+            ACICTS, the Ananda College Information and Communication Technology Society, has established itself as a
+            leading force in the Sri Lankan ICT landscape. With a rich history dating back to the 1980s, ACICTS has
+            consistently pushed the boundaries of technology and innovation.
+        </p>
+        <p>
+            From its humble beginnings as a computer club, ACICTS has evolved into a dynamic organization that fosters a
+            culture of creativity, problem-solving, and technological excellence. Through a wide range of initiatives,
+            including workshops, competitions, and research projects, ACICTS empowers students to explore the latest
+            advancements in technology and develop the skills needed to succeed in the digital age.
+        </p>
+        <p>
+            ACICTS has achieved remarkable success both locally and internationally, winning numerous accolades and
+            recognitions. The annual ICT event organized by ACICTS is a highly anticipated event that showcases the
+            talent and innovation of young minds.
+        </p>
+        <p>
+            As ACICTS continues to thrive, it remains committed to its mission of inspiring and empowering the next
+            generation of tech leaders.
+        </p>
+    </div>
+</div>
+
+<div class="ongoing-projects">
+    <div class="mockup-code w-full">
+        <pre class="text-primary"><code class="font-bold text-lg">Ongoing Events</code></pre>
+        <pre><code></code></pre>
+        <pre data-prefix="$" class="text-secondary"><code class="typing" text="Npm Run Dev"></code></pre>
+        <pre data-prefix=">" class=""><code class="typing" text="Bits@20.25.0 dev"></code></pre>
+        <pre data-prefix="-" class="text-success"><code class="typing" text="Live: bits.acicts.lk"></code></pre>
+        <pre data-prefix="◌" class="text-accent"><code class="typing" text="Starting..."></code></pre>
+        <pre data-prefix="✓" class="text-accent"><code class="typing" text="Running On Port 3000"></code></pre>
+    </div>
+</div>
+
+<div id="projects">
+<div class="section-title flex w-full flex-col">
+    <div class="divider" style="margin: 0 25px;"><p class="text-2xl font-bold">Projects</p></div>
+</div>
+<div class="projects">
+    <div class="skeleton project-non-res h-50 w-70"></div>
+    <div class="skeleton project-res h-50 w-96"></div>
+    <div class="skeleton project-non-res h-50 w-70"></div>
+    <div class="skeleton project-res h-50 w-96"></div>
+    <div class="skeleton project-non-res h-50 w-70"></div>
+    <div class="skeleton project-res h-50 w-96"></div>
+</div>
+</div>
+
+<div id="achievements">
+<div class="section-title flex w-full flex-col">
+    <div class="divider" style="margin: 0 25px;"><p class="text-2xl font-bold">Achievements</p></div>
+</div>
+<div class="achievements-container">
+    <div class="relative overflow-hidden">
+        <div id="carouselTrack" class="achievements flex carousel-track">
+        </div>
+
+        <button onclick="prevSlide()" class="carousel-action left-5 -translate-y-1/2">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button onclick="nextSlide()" class="carousel-action right-5 -translate-y-1/2">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <div class="flex justify-center gap-2 mt-4" id="dotsContainer">
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="board">
+<div class="section-title flex w-full flex-col" >
+    <div class="divider" style="margin: 0 25px;"><p class="text-2xl font-bold">Board Of Officials</p></div>
+</div>
+<div class="board-container">
+        <div class="board-card w-95 h-80">
+            <img src="img/1.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Tadeesha Nithesh</h2>
+                <p class="text-sm text-zinc-400">President</p>
+            </div>
+        </div>
+    <div class="board-row">
+        <div class="board-card w-95 h-80">
+            <img src="img/3.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Pulitha Sethnindu</h2>
+                <p class="text-sm text-zinc-400">Joint-Secretary</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-80">
+            <img src="img/2.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Nisandu Athsara</h2>
+                <p class="text-sm text-zinc-400">Vice President</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-80">
+            <img src="img/4.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Lithika Senavirathne</h2>
+                <p class="text-sm text-zinc-400">Joint-Secretary</p>
+            </div>
+        </div>
+    </div>
+    <div class="board-row">
+        <div class="board-card w-95 h-80">
+            <img src="img/5.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Sathira Gamage</h2>
+                <p class="text-sm text-zinc-400">Treasurer</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-80">
+            <img src="img/7.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Dinith Ranasinghe</h2>
+                <p class="text-sm text-zinc-400">Chief Organizer</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-80">
+            <img src="img/6.jpg" alt="President" class="board-img" />
+            <div class="board-desc">
+                <h2 class="text-lg font-semibold">Yehan Hemsith</h2>
+                <p class="text-sm text-zinc-400">Treasurer</p>
+            </div>
+        </div>
+    </div>
+    <div class="board-row">
+        <div class="board-card w-95 h-80">
+            <div class="board-multi-desc">
+                <h2 class="text-lg font-semibold">Sanuka Methyuga</h2>
+                <h2 class="text-lg font-semibold">Dulana Tharusara</h2>
+                <p class="text-sm text-zinc-400">Chief Coordinators</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-80">
+            <div class="board-multi-desc">
+                <h2 class="text-lg font-semibold">Chanka Wijesooriya</h2>
+                <h2 class="text-lg font-semibold">Vimukthi Munasinghe</h2>
+                <p class="text-sm text-zinc-400">Competition Coordinators</p>
+            </div>
+        </div>
+    </div>
+    <div class="board-row board-row-big">
+        <div class="board-card w-95 h-60">
+            <div class="board-multi-desc">
+                <h2 class="text-lg font-semibold">Dulran Nethmitha</h2>
+                <h2 class="text-lg font-semibold">Kaveesha Oshan</h2>
+                <h2 class="text-lg font-semibold">Ometh Sandul</h2>
+                <p class="text-sm text-zinc-400">Coordinator</p>
+            </div>
+        </div>
+        <div class="board-card w-95 h-60">
+            <div class="board-multi-desc">
+                <h2 class="text-lg font-semibold">Anuja Kalhara</h2>
+                <h2 class="text-lg font-semibold">Pamith Nimsitha</h2>
+                <h2 class="text-lg font-semibold">Dinan Janindu</h2>
+                <h2 class="text-lg font-semibold">Sandew Enuwara</h2>
+                <h2 class="text-lg font-semibold">Gavesh Aloka</h2>
+                <p class="text-sm text-zinc-400">Organizer</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div id="contact">
+<div class="section-title flex w-full flex-col">
+    <div class="divider" style="margin: 0 25px;"><p class="text-2xl font-bold">Contact</p></div>
+</div>
+<div class="contact-container">
+    <label class="contact-input input">
+        <i class="h-[1em] opacity-50 fa-solid fa-signature"></i>
+        <input type="text" class="grow" placeholder="Name" />
+    </label>
+    <label class="contact-input input validator">
+        <i class="h-[1em] opacity-50 fa-solid fa-at"></i>
+        <input type="email" placeholder="Email Address" required />
+    </label>
+    <label class="contact-input input">
+        <i class="h-[1em] opacity-50 fa-solid fa-heading"></i>
+        <input type="text" class="grow" placeholder="Subject" />
+    </label>
+    <textarea class="contact-input textarea h-25" placeholder="Message"></textarea>
+    <button class="btn btn-soft" id="sub">Submit</button>
+</div>
+</div>
+
+<footer class="footer footer-main sm:footer-horizontal text-base-content p-10">
+    <nav>
+        <h5 class="footer-title">Contact Us</h5>
+        <a class="footer-link font-semibold">Home</a>
+        <a class="footer-link font-semibold">About</a>
+        <a class="footer-link font-semibold">Projects</a>
+        <a class="footer-link font-semibold">Achievements</a>
+    </nav>
+    <nav class="footer-details">
+        <h5 class="footer-title">Links</h5>
+        <div class="footer-detail">
+            <h6 class="font-bold">Address:</h6>
+            <p class="text-gray-400 font-semibold">Ananda College ICT Society,
+                Ananda College, Colombo 10.</p>
+        </div>
+        <div class="footer-detail">
+            <h6 class="font-bold">Phone:</h6>
+            <p class="text-gray-400 font-semibold">+94 70 4063 555</p>
+        </div>
+        <div class="footer-detail">
+            <h6 class="font-bold">Email:</h6>
+            <p class="text-gray-400 font-semibold">info@acicts.lk</p>
+        </div>
+    </nav>
+    <nav>
+        <h5 class="footer-title">Socials</h5>
+        <div class="grid grid-flow-col gap-4">
+            <a class="footer-social"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a class="footer-social"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a class="footer-social"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+            <a class="footer-social"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+            <a class="footer-social"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a class="footer-social"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+        </div>
+    </nav>
+</footer>
+<div class="footer-divider flex w-full flex-col bg-base-300">
+    <div class="divider"></div>
+</div>
+<footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+    <aside>
+        <p>Copyright © ACICTS 2025</p>
+    </aside>
+</footer>
+
+<script>
+    function bodyScroll(to) {
+        let pos = 0
+        if(to === "home"){
+            pos = 0
+        } else{
+            let element_pos = document.getElementById(to).getBoundingClientRect().top
+            console.log(element_pos - document.body.getBoundingClientRect().top)
+            pos = (element_pos - document.body.getBoundingClientRect().top) - 120
+        }
+        window.scrollTo(0 , pos)
+    }
+    
+    $(window).on('load', function () {
+        fetch('./data/projects.json')
+            .then(response => response.json())
+            .then(projects => {
+                $('.projects').html(' ')
+                projects.forEach((project) => {
+                    let urlstyle;
+                    if (!project.url) {
+                        urlstyle = `style="display:none;"`
+                    }
+                    $('.projects').append(`
+<div class="card project-non-res w-70">
+        <article class="group h-80 max-w-80 bg-transparent perspective-midrange">
+            <div class="relative h-full w-full text-center transition-transform duration-750 transform-3d group-hover:rotate-y-180">
+                <section class="project-front absolute grid project-card h-full w-full flex-col justify-center gap-y-5 px-2 py-10 backface-hidden">
+                    <figure>
+                        <img src="${project.img}" alt="${project.title}"/>
+                    </figure>
+                    <p class="text-gray-400 font-semibold project-title">${project.title}</p>
+                </section>
+                <section class="project-card back flex h-full w-full rotate-y-180 flex-col justify-center text-white backface-hidden">
+                <div class="project-back">
+                        <h2 class="card-title project-title font-bold">${project.title}</h2>
+                        <p class="text-gray-400/50 text-sm font-semibold">${project.desc}</p>
+                        <button class="project-btn btn bg-gray-800/50" ${urlstyle}><a href="${project.url}" target="_blank">Visit</a></button>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+<div class="project-card project-res bg-base-100 w-96 shadow-sm">
+        <figure class="px-10 pt-10 w-70">
+            <img
+                    src="${project.img}"
+                    alt="${project.title}"/>
+        </figure>
+        <div>
+            <h2 class="font-bold text-lg">${project.title}</h2>
+            <p class="text-gray-400/50 text-sm font-semibold">${project.desc}</p>
+            <button class="project-btn btn bg-gray-800/50" ${urlstyle}><a href="${project.url}" target="_blank">Visit</a></button>
+        </div>
+    </div>`)
+                })
+            })
+            .catch(error => console.error('Error loading achievement data:', error));
+    })
+
+    fetch('./data/achievements.json')
+        .then(response => response.json())
+        .then(achievementData => {
+            achievementData.sort((a, b) => {
+                const yearA = parseInt(a.year, 10);
+                const yearB = parseInt(b.year, 10);
+                return yearB - yearA;
+            });
+
+            $('.achievements').append(`<div class="empty-achievement w-80 h-100"></div><div class="empty-achievement w-80 h-100"></div>`)
+            let i = 0
+            achievementData.forEach(achievement => {
+                let classes = ''
+                if (i === 0) {
+                    classes = 'active'
+                }
+                $('.achievements').append(`
+                    <div class="carousel-item achievement ${classes}">
+                <div class="img">
+                    <img alt="acicts" src="img/${achievement.image}"/>
+                </div>
+                <div class="content">
+                    <h2 class="title font-bold text-lg">${achievement.title}</h2>
+                    <p class="desc font-semibold text-sm text-gray-300/50">${achievement.description}</p>
+                    <p class="year font-bold text-sm text-gray-400/75">- ${achievement.year}</p>
+                </div>
+            </div>
+                    `)
+                $('#dotsContainer').append(`<button onclick="goToSlide(${i})" class="carousel-selector h-3 w-3 ${classes}"></button>`)
+                i++
+            });
+            $('.achievements').append(`<div class="empty-achievement w-80 h-100"></div><div class="empty-achievement w-80 h-100"></div>`)
+            document.getElementById('carouselTrack').scrollTo(100, 0)
+        })
+        .catch(error => console.error('Error loading achievement data:', error));
+
+    const track = document.getElementById('carouselTrack');
+    let items;
+    let dots;
+    setTimeout(() => {
+        items = document.querySelectorAll('.carousel-item');
+        dots = document.querySelectorAll('#dotsContainer button');
+    }, 2000)
+    let current = 0;
+
+    function updateCarousel() {
+        track.scrollTo(current * 370, 0)
+        items.forEach((item, idx) => {
+            item.classList.toggle('active', idx === current);
+        });
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === current);
+        });
+    }
+
+    function nextSlide() {
+        current = (current + 1) % items.length;
+        updateCarousel();
+    }
+
+    function prevSlide() {
+        current = (current - 1 + items.length) % items.length;
+        updateCarousel();
+    }
+
+    function goToSlide(index) {
+        current = index;
+        updateCarousel();
+    }
+
+    setInterval(() => {
+        let isHovered = $('.achievements').find('.active').is(':hover');
+        if (!isHovered) {
+            nextSlide();
+        }
+    }, 4000);
+
+    $(window).on('load', function () {
+
+        let s = 0;
+        $('.typing').each(function (index) {
+            let text = ["npm i daisyui", "installing..", "Done!"]
+            let i = 0;
+            let element = $(this)
+            setInterval(function () {
+                element.append(element.attr('text')[i])
+                i++
+            }, 100)
+            setInterval(function () {
+                i = 0
+                element.text('')
+            }, 5000)
+        })
+    })
+
+    let nav_i = 0
+
+    $('body').on("click", function () {
+        if ($(event.target).closest('.nav-container').length === 0) {
+            nav_i = 1
+            nav_res()
+        }
+    })
+
+    $(window).resize(function () {
+        nav_i = 1
+        nav_res()
+    })
+
+    $(window).on('scroll', function () {
+        nav_i = 1
+        nav_res()
+        const yPosition = window.scrollY;
+        let sections = ['home', 'about', 'projects', 'achievements','board', 'contact']
+        let i = 1
+        $(`#nav .active`).removeClass('active');
+        $(`#res-nav .active`).removeClass('active');
+        sections.forEach(section => {
+        if(((document.getElementById(section).getBoundingClientRect().bottom - document.body.getBoundingClientRect().top) - 250) > yPosition && yPosition > ((document.getElementById(section).getBoundingClientRect().top - document.body.getBoundingClientRect().top) - 500)) {
+            $(`#nav div:nth-child(${i})`).addClass('active');
+            $(`#res-nav div:nth-child(${i})`).addClass('active');
+        }
+        i++
+        })
+    })
+
+    function nav_res() {
+        if (nav_i === 0) {
+            $('.nav-container').addClass('show')
+            $('#res-nav').addClass('show')
+            setTimeout(function () {
+                $('.nav-container').addClass('height')
+                $('#res-nav').addClass('opacity')
+            }, 50)
+            nav_i = 1
+        } else {
+            $('.nav-swap-box').prop('checked', false)
+            $('.nav-container').removeClass('height')
+            $('#res-nav').removeClass('opacity')
+            setTimeout(function () {
+                $('.nav-container').removeClass('show')
+                $('#res-nav').removeClass('show')
+            }, 500)
+            nav_i = 0
+        }
+    }
+
+</script>
+</body>
+</html>
