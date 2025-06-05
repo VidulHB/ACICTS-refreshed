@@ -38,7 +38,7 @@
                 <a>Contact</a>
             </div>
         </div>
-        <button class="btn btn-soft" id="reg">Register</button>
+        <button class="btn btn-soft" id="reg" onclick="window.open('https://acicts.lk/register', '_blank').focus();">Register</button>
         <div class="btn" id="nav-res">
             <label class="swap swap-rotate" id="nav-btn">
                 <input type="checkbox" class="nav-swap-box" onchange="nav_res()"/>
@@ -79,7 +79,7 @@
                     Empowering Minds and Shaping the Future through Innovation – Join us on our journey as we explore,
                     create, and connect in the world of technology.
                 </p>
-                <button class="btn btn-soft" id="reg">Register</button>
+                <button class="btn btn-soft" id="reg" onclick="window.open('https://acicts.lk/register', '_blank').focus();">Register</button>
             </div>
         </div>
     </div>
@@ -116,11 +116,11 @@
     <div class="mockup-code w-full">
         <pre class="text-primary"><code class="font-bold text-lg">Ongoing Events</code></pre>
         <pre><code></code></pre>
-        <pre data-prefix="$" class="text-secondary"><code class="typing" text="Npm Run Dev"></code></pre>
-        <pre data-prefix=">" class=""><code class="typing" text="Bits@20.25.0 dev"></code></pre>
-        <pre data-prefix="-" class="text-success"><code class="typing" text="Live: bits.acicts.lk"></code></pre>
-        <pre data-prefix="◌" class="text-accent"><code class="typing" text="Starting..."></code></pre>
-        <pre data-prefix="✓" class="text-accent"><code class="typing" text="Running On Port 3000"></code></pre>
+        <pre data-prefix="$"><p class="typing text-zinc-300"><span class="text-red-400">Npm</span> Run Dev</p></pre>
+        <pre data-prefix=">" class="text-gray-300/90"><code class="typing">Bits@20.25.0 dev</code></pre>
+        <pre data-prefix="-"><p class="text-red-400 typing">Live: <a href="https://bits.acicts.lk" class="text-success ongoing-link">bits.acicts.lk</a></p></pre>
+        <pre data-prefix="◌" class="text-gray-300/90"><code class="typing">Started in 2.1s</code></pre>
+        <pre data-prefix="✓" class="text-success"><code class="typing">Running On Port <span class="text-amber-300">3000</span></code></pre>
     </div>
 </div>
 
@@ -461,24 +461,6 @@
             nextSlide();
         }
     }, 4000);
-
-    $(window).on('load', function () {
-
-        let s = 0;
-        $('.typing').each(function (index) {
-            let text = ["npm i daisyui", "installing..", "Done!"]
-            let i = 0;
-            let element = $(this)
-            setInterval(function () {
-                element.append(element.attr('text')[i])
-                i++
-            }, 100)
-            setInterval(function () {
-                i = 0
-                element.text('')
-            }, 5000)
-        })
-    })
 
     let nav_i = 0
 

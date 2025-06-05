@@ -133,13 +133,54 @@ html, body {
 .mockup-code{
     background-color: rgba(19, 19, 19);
 }
-
-.typing {
-    border-right: .15em solid orange;
-    animation: blink-caret .75s step-end infinite;
+pre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-wrap: nowrap;
+    white-space: pre;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: auto;
 }
 
-/* The typewriter cursor effect */
+.typing {
+    height: 19px;
+    position: relative;
+    width: auto;
+    border-right: .15em solid orange;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-effect 8s steps(22) infinite, blink-caret .75s step-end infinite;;
+}
+
+.ongoing-link {
+    text-decoration: none;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.ongoing-link:hover {
+    border-bottom: 2px solid gold;
+}
+
+@keyframes typing-effect {
+    0%,
+    100% {
+        width: 0;
+    }
+    10%,
+    90% {
+        width: 58px;
+    }
+    30%,
+    70% {
+        width: 215px;
+        max-width: max-content;
+    }
+}
+
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: orange; }
