@@ -337,18 +337,17 @@
         }
         window.scrollTo(0 , pos)
     }
-    
-    $(window).on('load', function () {
-        fetch('./data/projects.json')
-            .then(response => response.json())
-            .then(projects => {
-                $('.projects').html(' ')
-                projects.forEach((project) => {
-                    let urlstyle;
-                    if (!project.url) {
-                        urlstyle = `style="display:none;"`
-                    }
-                    $('.projects').append(`
+
+    fetch('./data/projects.json')
+        .then(response => response.json())
+        .then(projects => {
+            $('.projects').html(' ')
+            projects.forEach((project) => {
+                let urlstyle;
+                if (!project.url) {
+                    urlstyle = `style="display:none;"`
+                }
+                $('.projects').append(`
 <div class="card project-non-res w-70">
         <article class="group h-80 max-w-80 bg-transparent perspective-midrange">
             <div class="relative h-full w-full text-center transition-transform duration-750 transform-3d group-hover:rotate-y-180">
@@ -380,10 +379,9 @@
             <button class="project-btn btn bg-gray-800/50" ${urlstyle}><a href="${project.url}" target="_blank">Visit</a></button>
         </div>
     </div>`)
-                })
             })
-            .catch(error => console.error('Error loading achievement data:', error));
-    })
+        })
+        .catch(error => console.error('Error loading achievement data:', error));
 
     fetch('./data/achievements.json')
         .then(response => response.json())
